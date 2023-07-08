@@ -8,7 +8,7 @@ html, body {
     margin: 0;
     padding: 0px;
     color: white;
-    background-image: url(public/backgroundimage.jpg);
+    background-image: url(../public/backgroundimage.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-color: #181A1B;
@@ -28,9 +28,13 @@ nav li {
     display: inline;
     padding: 20px;
 }
-nav a {
+a {
     color: white;
     text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 166, 0);
+    transition: .3s;
 }
 header button {
     border-radius: 40px;
@@ -65,13 +69,19 @@ main {
     grid-template-rows: 10vh 90vh 70vh 70vh 15vh;
     justify-items: center;
     align-items: center;
-    
 }
 .item1 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 6;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
 }
 .item2 {
     grid-row-start: 2;
